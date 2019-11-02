@@ -27,8 +27,8 @@ return tem;
 com operator *(com c2)
 {
 com te;
-te.re=re * c2.re;
-te.im=im * c2.im;
+te.re=(re * c2.re) - (im * c2.im);
+te.im=(re * c2.im) + (c2.re * im) ;
 return te;
 }
 void op()
